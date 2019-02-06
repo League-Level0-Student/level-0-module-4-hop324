@@ -40,6 +40,6 @@ if(alphabet.charAt(g) == 'j') {
 
 		
 	}
-}
+
 
 

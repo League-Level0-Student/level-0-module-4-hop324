@@ -21,13 +21,19 @@ public class DontForgetTheLyrics {
 	
 	public static void main(String[] args) {
 		// 4. Make a pop-up to explain the game.
-JOptionPane.showMessageDialog(null, "");
+JOptionPane.showMessageDialog(null, "Don't forget the lyrics!");
 		// 5. Use the playSound method to play your song.
-
+playSound("Song.wav");
 		// 6. Make a pop-up for the player to type their answer.
 
+String lyrics = JOptionPane.showInputDialog("What were the lyrics?");
 		// 7. If they answered correctly, tell them that they were right.
-
+if (lyrics.equals("Roses are red, violets are blue, nobody loves you")){
+JOptionPane.showMessageDialog(null, "You're correct!");	
+}
+else{
+	JOptionPane.showMessageDialog(null, "You're wrong!");
+}
 		// 8. Otherwise, tell them they are wrong, and give them the answer.
 
 		// 9. Record another sound and repeat steps 5-8.
