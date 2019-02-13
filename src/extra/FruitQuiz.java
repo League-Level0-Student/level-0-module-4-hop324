@@ -25,19 +25,22 @@ public class FruitQuiz extends KeyAdapter {
 		// 1. Print out the key code variable
 System.out.println(keyCode);
 		// 2. Make 3 int variables that hold the key codes for A, b, and C
-		int A = 6105; int B = 30; int C = 17294;
+		int A = 65; int B = 30; int C = 74;
 		// 14. Repeat steps 11, 12, and 13 for question3 and question4 - IMPORTANT: The questions must be in reverse order from top to bottom to work properly
 		
 		// 12. If question2 is showing,
 			if(question2.isShowing()) {
-				
+				if(keyCode == A) {
+					correct();
+				//	nextQuestion(question2);
+				}
 			}
 			// 13. check if it is right or wrong like you did for question1
 		
 			
 			else if (question1.isShowing()) {
 			// 3. If they selected the right fruit, do steps 4 and 7
-			if(question1 = A) {}
+			if(keyCode == C) {}
 				// 4. Call the correct() method
 				correct();
 				// 7. Use the nextQuestion() method to go to question2
@@ -52,7 +55,7 @@ System.out.println(keyCode);
 		
 		}
 
-	}
+	
 
 	private void correct() {
 		// 5. Find a sound for when they get a question right, and drag it into
